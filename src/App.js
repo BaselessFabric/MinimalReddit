@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import SideNav from "./SideNav";
 import Main from "./Main";

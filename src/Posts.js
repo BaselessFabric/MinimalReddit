@@ -1,21 +1,6 @@
 import { React, useEffect, useState } from "react";
 import "./Posts.css";
 
-const posts = [
-    {
-        title: "My favorite programming language is JavaScript",
-        author: "u/javascript_lover",
-    },
-    {
-        title: "Why I think Python is the best language for beginners",
-        author: "u/python_fan",
-    },
-    {
-        title: "The benefits of learning C++",
-        author: "u/cpp_enthusiast",
-    },
-];
-
 const Post = (props) => {
     return (
         <div className="post">
@@ -39,20 +24,21 @@ function Posts(props) {
     // const [subreddit, setSubreddit] = useState("webdev");
 
     useEffect(() => {
-        fetch("https://www.reddit.com/r/" + props.subreddit + ".json").then(
-            (res) => {
-                if (res.status !== 200) {
-                    console.log("EROROR");
-                    return;
-                }
-
-                res.json().then((data) => {
-                    if (data !== null) {
-                        setArticles(data.data.children);
-                    }
-                });
+        fetch("https://www.reddit.com/r/" + props.subreddit + ".json", {
+            mode: "cors",
+            credentials: "include",
+        }).then((res) => {
+            if (res.status !== 200) {
+                console.log("EROROR");
+                return;
             }
-        );
+
+            res.json().then((data) => {
+                if (data !== null) {
+                    setArticles(data.data.children);
+                }
+            });
+        });
     }, [props.subreddit]);
     return (
         <div id="posts">
