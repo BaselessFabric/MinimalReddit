@@ -20,7 +20,11 @@ const Post = (props) => {
     return (
         <div className="post">
             <div className="post-title">
-                <a href={"https://www.reddit.com" + props.post.permalink}>
+                <a
+                    href={"https://www.reddit.com" + props.post.permalink}
+                    target={"_blank"}
+                    rel={"noreferrer"}
+                >
                     {props.post.title}
                 </a>
             </div>
