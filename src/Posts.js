@@ -30,24 +30,26 @@ const Post = (props) => {
     );
 };
 
-function Posts() {
+function Posts(props) {
     const [articles, setArticles] = useState([]);
-    const [subreddit, setSubreddit] = useState("webdev");
+    // const [subreddit, setSubreddit] = useState("webdev");
 
     useEffect(() => {
-        fetch("https://www.reddit.com/r/javascript.json").then((res) => {
-            if (res.status !== 200) {
-                console.log("EROROR");
-                return;
-            }
-
-            res.json().then((data) => {
-                if (data !== null) {
-                    setArticles(data.data.children);
+        fetch("https://www.reddit.com/r/" + props.subreddit + ".json").then(
+            (res) => {
+                if (res.status !== 200) {
+                    console.log("EROROR");
+                    return;
                 }
-            });
-        });
-    }, [subreddit]);
+
+                res.json().then((data) => {
+                    if (data !== null) {
+                        setArticles(data.data.children);
+                    }
+                });
+            }
+        );
+    }, [props.subreddit]);
     return (
         <div id="posts">
             {articles !== null

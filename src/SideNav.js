@@ -1,7 +1,7 @@
 import React from "react";
 import "./SideNav.css";
 
-export default function SideNav() {
+export default function SideNav(props) {
     const logo = require("./images/Reddit_logo_full_1.png");
     const menus = [
         { to: "/r/popular", text: "Popular" },
@@ -17,7 +17,13 @@ export default function SideNav() {
                 <img src={logo} alt="Reddit Logo" />
             </div>
             <div className="sidenav-search">
-                <input type="test" name="search" placeholder="Search" />
+                <input
+                    type="test"
+                    name="search"
+                    placeholder="Search"
+                    value={props.subreddit}
+                    onChange={(e) => props.setSubreddit(e.target.value)}
+                />
             </div>
             <div className="sidenav-links">
                 <ul className="sitenav-menu">
