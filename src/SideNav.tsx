@@ -2,7 +2,12 @@ import React from "react";
 import { FC } from "react";
 import "./SideNav.css";
 
-export const SideNav: FC = (props) => {
+type SideNavProps = {
+    subreddit: any;
+    setSubreddit: any;
+};
+
+export const SideNav: FC<SideNavProps> = (props) => {
     const logo = require("./images/Reddit_logo_full_1.png");
     const menus = [
         { to: "/r/popular", text: "Popular" },
@@ -26,6 +31,7 @@ export const SideNav: FC = (props) => {
                     onChange={(e) => props.setSubreddit(e.target.value)}
                 />
             </div>
+
             <div className="sidenav-links">
                 <ul className="sitenav-menu">
                     {menus.map((menu) => (

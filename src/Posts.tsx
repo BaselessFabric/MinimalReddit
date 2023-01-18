@@ -2,9 +2,16 @@ import { useEffect, useState, FC } from "react";
 import React from "react";
 import "./Posts.css";
 
-const PostProps = {};
+type PostProps = {
+    subreddit?: any;
+    setSubreddit?: any;
+    post?: any;
+    data?: any;
+    index?: any;
+    key?: number;
+};
 
-const Post: FC = (props) => {
+const Post: FC<PostProps> = (props) => {
     return (
         <div className="post">
             <div className="post-title">
@@ -22,11 +29,12 @@ const Post: FC = (props) => {
     );
 };
 
-const Posts: FC = (props) => {
-    const [articles, setArticles] = useState([]);
+const Posts: FC<PostProps> = (props) => {
+    const [articles, setArticles] = useState<any[]>([]);
     // const [subreddit, setSubreddit] = useState("webdev");
 
     useEffect(() => {
+        console.log("https://www.reddit.com/r/" + props.subreddit + ".json");
         fetch("https://www.reddit.com/r/" + props.subreddit + ".json", {
             mode: "cors",
         }).then((res) => {
