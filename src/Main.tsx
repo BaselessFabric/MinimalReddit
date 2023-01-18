@@ -6,10 +6,6 @@ import "./Main.css";
 
 type MainProps = {
     subreddit: any;
-    props?: any;
-    post?: any;
-    key?: any;
-    Posts?: any;
 };
 
 export const Main: FC<MainProps> = (props): ReactElement => {
