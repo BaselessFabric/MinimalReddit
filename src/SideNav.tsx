@@ -1,7 +1,8 @@
 import React from "react";
+import { FC } from "react";
 import "./SideNav.css";
 
-export default function SideNav(props) {
+export const SideNav: FC = (props) => {
     const logo = require("./images/Reddit_logo_full_1.png");
     const menus = [
         { to: "/r/popular", text: "Popular" },
@@ -44,4 +45,4 @@ export default function SideNav(props) {
             </div>
         </div>
     );
-}
+};
