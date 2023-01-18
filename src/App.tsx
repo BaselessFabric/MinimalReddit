@@ -4,7 +4,7 @@ import { Main } from "./Main";
 import { useState, FC } from "react";
 
 const App: FC = () => {
-    const [subreddit, setSubreddit] = useState();
+    const [subreddit, setSubreddit] = useState<any>();
 
     return (
         <div className="app">
