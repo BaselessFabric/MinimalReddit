@@ -3,12 +3,8 @@ import React from "react";
 import "./Posts.css";
 
 type PostProps = {
-    subreddit?: any;
-    setSubreddit?: any;
+    subreddit?: string;
     post?: any;
-    data?: any;
-    index?: any;
-    key?: number;
 };
 
 const Post: FC<PostProps> = (props) => {
@@ -31,7 +27,6 @@ const Post: FC<PostProps> = (props) => {
 
 const Posts: FC<PostProps> = (props) => {
     const [articles, setArticles] = useState<any[]>([]);
-    // const [subreddit, setSubreddit] = useState("webdev");
 
     useEffect(() => {
         console.log("https://www.reddit.com/r/" + props.subreddit + ".json");
