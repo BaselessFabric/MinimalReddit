@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# Minimal Reddit Client
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Minimal Reddit Client, a simple web application that allows you to browse Reddit content. This minimalistic Reddit client is built with TypeScript, React, HTML, and CSS, following the principles of Material Design. It provides a straightforward interface for users to search and view Reddit posts in real-time as they type in the search box.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Real-time Search: Reddit posts update dynamically as you type in the search box.
+- Minimalistic Design: A clean and intuitive user interface inspired by Material Design.
+- TypeScript & React: Built with TypeScript for type safety and React for efficient UI updates.
+- Easy to Use: No complex features or clutter, just a seamless Reddit browsing experience.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This Reddit client is primarily built using the following technologies:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **TypeScript**: A statically typed superset of JavaScript, providing enhanced code quality.
+- **React**: A JavaScript library for building user interfaces, ensuring fast and responsive rendering.
+- **HTML & CSS**: The foundation for structuring web pages and styling them.
+- **Material Design**: Following the principles of Material Design for a modern and user-friendly interface.
 
-### `npm test`
+## How to Use
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/BaselessFabric/MinimalReddit.git
+   ```
 
-### `npm run build`
+2. Navigate to the project directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  ```sh
+  cd MinimalReddit
+  ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Install NPM packages:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  ```sh
+  npm install
+  ```
 
-### `npm run eject`
+4.  Start the development server:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  ```sh
+  npm start
+  ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5.  Open your web browser and visit http://localhost:3000 to use the Minimal Reddit Client.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Demo
 
-## Learn More
+https://baselessfabric.github.io/MinimalReddit/
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project welcomes contributions. If you have ideas for improvements, new features, or bug fixes, please feel free to open an issue or submit a pull request.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contact
 
-### Analyzing the Bundle Size
+If you have any questions, feedback, or suggestions, please reach out to me:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Email: [hello@alexwalls.com](hello@alexwalls.com)
+- GitHub: https://github.com/BaselessFabric
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for exploring the Minimal Reddit Client! Enjoy your Reddit browsing experience with simplicity and efficiency.
